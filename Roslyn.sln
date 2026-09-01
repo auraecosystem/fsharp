@@ -1,0 +1,9 @@
+open Microsoft.CodeAnalysis.CSharp.Scripting
+open Microsoft.CodeAnalysis.Scripting
+
+let executeGeneratedCSharp (csharpCode: string) = async {
+    let scriptOptions = ScriptOptions.Default.WithReferences(typeof<System.Object>.Assembly)
+    // Compiles and runs the generated C# code live in memory
+    let! state = CSharpScript.RunAsync(csharpCode, scriptOptions) |> Async.AwaitTask
+    printfn "[Roslyn] Compiled and executed dynamic C# assembly successfully."
+}
