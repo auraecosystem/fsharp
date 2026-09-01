@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    
+    <!-- Enable Native AOT Compilation -->
+    <PublishAot>true</PublishAot>
+    
+    <!-- Single-file binary output configuration -->
+    <PublishSelfContained>true</PublishSelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    
+    <!-- Strip unused code and symbols for smaller binary size -->
+    <TrimMode>full</TrimMode>
+    <StripSymbols>true</StripSymbols>
+    <OptimizationPreference>Size</OptimizationPreference> <!-- Or 'Speed' -->
+    
+    <!-- Disable dynamic reflection code generation -->
+    <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>
+    <EventSourceSupport>false</EventSourceSupport>
+    <HttpActivityPropagationSupport>false</HttpActivityPropagationSupport>
+  </PropertyGroup>
+
+</Project>
