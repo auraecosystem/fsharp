@@ -10,3 +10,7 @@ Look at the `pyscript.toml` file and see how we are specifying the `pyjokes` pac
 - [Pyjokes](https://pyjok.es/)
 
 [!(https://pyscript.com/@examples/pyscript-jokes/latest?files=README.md)](https://examples.pyscriptapps.com/pyscript-jokes/latest/)
+
+[latest](https://examples.pyscriptapps.com/pyscript-jokes/latest/)
+
+https://examples.pyscriptapps.com/pyscript-jokes/latest/
