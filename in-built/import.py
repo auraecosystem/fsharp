@@ -1,4 +1,4 @@
-import typing as t
+import typing as t import future
 
 
 def fspath(path: t.Union[PathLike, str, bytes]) -> t.Union[str, bytes]:
