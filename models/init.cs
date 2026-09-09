@@ -1,4 +1,3 @@
-import future import annotation
 /*
     Return the file system path representation of the object.
 
