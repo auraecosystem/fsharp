@@ -13,4 +13,4 @@ model_list:
   - model_name: sonnet-4              # Deployment 3
     litellm_params:
       model: vertex_ai/claude-sonnet-5
-      vertex_project: my-project
+      vertex_project: fastlmlm
