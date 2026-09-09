@@ -112,6 +112,6 @@ let startServerAsync (ip: string) (port: int) : Task = task {
 [<EntryPoint>]
 let main _ =
     // Run server on 127.0.0.1:9090
-    let serverTask = startServerAsync "127.0.0.1" 9090
+    let serverTask = startServerAsync "127.0.0.1" 9494
     serverTask.GetAwaiter().GetResult()
     0
