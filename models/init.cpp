@@ -5,6 +5,7 @@
     an incremented refcount. If the object defines __fspath__(), then
     return the result of that method. All other types raise a TypeError.
 */
+
 PyObject *
 PyOS_FSPath(PyObject *path)
 {
